@@ -1,42 +1,55 @@
-<main id="calc">
-  <header>
-    Calculator
-  </header>
-  <section id="screen">
-    <div id="screenCont">
-    </div>
-  </section>
-  <section id="keyboard">
-    <ul class="keyRow">
-      <li><button id="bAdd" type="button" onclick="disp('+')" class="opKey">+</button></li>
-      <li><button id="bSub" type="button" onclick="disp('-')" class="opKey">-</button></li>
-      <li><button id="bMul" type="button" onclick="disp('*')" class="opKey">x</button></li>
-    </ul>
-    <ul class="keyRow">
-      <li><button id="bDiv" type="button" onclick="disp('/')" class="opKey">/</button></li>
-      <li><button id="bDot" type="button" onclick="disp('.')" class="opKey">.</button></li>
-      <li><button id="bClr" type="button" onclick="clr()" class="opKey">AC</button></li>
-    </ul>
-    </ul>
-    <ul class="keyRow">
-      <li><button id="b7" type="button" onclick="disp('7')">7</button></li>
-      <li><button id="b8" type="button" onclick="disp('8')">8</button></li>
-      <li><button id="b9" type="button" onclick="disp('9')">9</button></li>
-    </ul>
-    <ul class="keyRow">
-      <li><button id="b4" type="button" onclick="disp('4')">4</button></li>
-      <li><button id="b5" type="button" onclick="disp('5')">5</button></li>
-      <li><button id="b6" type="button" onclick="disp('6')">6</button></li>
-    </ul>
-    <ul class="keyRow">
-      <li><button id="b1" type="button" onclick="disp('1')">1</button></li>
-      <li><button id="b2" type="button" onclick="disp('2')">2</button></li>
-      <li><button id="b3" type="button" onclick="disp('3')">3</button></li>
-    </ul>
-    <ul class="keyRow lastKeys">
-      <li id="zeroKey"><button id="b0" onclick="disp('0')" type="button">0</button></li>
-      <li id="equalKey"><button id="bEqu" onclick="calc()" type="button">=</button></li>
-      <li id="backSpKey"><button id="bDel" onclick="backsp()" type="button">DEL</button></li>
-    </ul>
-  </section>
-</main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  <main id="calc">
+    <header>
+      Calculator
+    </header>
+    <section id="screen">
+      <div id="screenCont">
+      </div>
+    </section>
+    <section id="keyboard">
+      <ul class="keyRow">
+        <li><button id="bAdd" type="button" onclick="disp('+')" class="opKey">+</button></li>
+        <li><button id="bSub" type="button" onclick="disp('-')" class="opKey">-</button></li>
+        <li><button id="bMul" type="button" onclick="disp('*')" class="opKey">x</button></li>
+      </ul>
+      <ul class="keyRow">
+        <li><button id="bDiv" type="button" onclick="disp('/')" class="opKey">/</button></li>
+        <li><button id="bDot" type="button" onclick="disp('.')" class="opKey">.</button></li>
+        <li><button id="bClr" type="button" onclick="clr()" class="opKey">AC</button></li>
+      </ul>
+      </ul>
+      <ul class="keyRow">
+        <li><button id="b7" type="button" onclick="disp('7')">7</button></li>
+        <li><button id="b8" type="button" onclick="disp('8')">8</button></li>
+        <li><button id="b9" type="button" onclick="disp('9')">9</button></li>
+      </ul>
+      <ul class="keyRow">
+        <li><button id="b4" type="button" onclick="disp('4')">4</button></li>
+        <li><button id="b5" type="button" onclick="disp('5')">5</button></li>
+        <li><button id="b6" type="button" onclick="disp('6')">6</button></li>
+      </ul>
+      <ul class="keyRow">
+        <li><button id="b1" type="button" onclick="disp('1')">1</button></li>
+        <li><button id="b2" type="button" onclick="disp('2')">2</button></li>
+        <li><button id="b3" type="button" onclick="disp('3')">3</button></li>
+      </ul>
+      <ul class="keyRow lastKeys">
+        <li id="zeroKey"><button id="b0" onclick="disp('0')" type="button">0</button></li>
+        <li id="equalKey"><button id="bEqu" onclick="calc()" type="button">=</button></li>
+        <li id="backSpKey"><button id="bDel" onclick="backsp()" type="button">DEL</button></li>
+      </ul>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
